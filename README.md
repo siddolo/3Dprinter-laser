@@ -15,6 +15,8 @@ M106 S0 ; This line turns the laser OFF too (0%)
 
 Through the use of JP1 jumper you can switch from Laser to Fan, so you don't need to detach this interface to use your printer normally.
 
+![pcb](3D-front.png)
+
 # 12V or 24V printer
 
 If your FAN runs at 24V R1 must be 2.2KOhm, if it runs at 12V R1 must be 1.1KOhm.
