@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:3Dprinter-laser-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr User 8268 5827
 encoding utf-8
@@ -74,19 +73,6 @@ Wire Wire Line
 Connection ~ 3250 900 
 Text Label 3450 900  0    50   ~ 0
 +5V
-$Comp
-L Device:R R1
-U 1 1 5C6F3931
-P 2850 2100
-F 0 "R1" V 2643 2100 50  0000 C CNN
-F 1 "2K2*" V 2734 2100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2780 2100 50  0001 C CNN
-F 3 "~" H 2850 2100 50  0001 C CNN
-	1    2850 2100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1850 1850 2300 1850
 Wire Wire Line
 	2300 2350 1850 2350
 $Comp
@@ -120,14 +106,12 @@ L Jumper:Jumper_3_Bridged12 JP1
 U 1 1 5C6F6046
 P 2300 2100
 F 0 "JP1" V 2346 2166 50  0000 L CNN
-F 1 "Laser/Fan SW" H 2400 2000 50  0000 L CNN
+F 1 "Laser/Fan SW" H 2600 2100 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2300 2100 50  0001 C CNN
 F 3 "~" H 2300 2100 50  0001 C CNN
 	1    2300 2100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2450 2100 2700 2100
 Wire Wire Line
 	3250 2450 3250 2300
 Wire Wire Line
@@ -253,4 +237,29 @@ Text Notes 4350 2250 0    50   ~ 0
 +
 Text Notes 4350 2500 0    50   ~ 0
 -
+Wire Wire Line
+	1850 1850 2050 1850
+Wire Wire Line
+	2050 1850 2050 2100
+Wire Wire Line
+	2050 2100 2150 2100
+Wire Wire Line
+	2700 2100 2600 2100
+Wire Wire Line
+	2600 2100 2600 1850
+Wire Wire Line
+	2600 1850 2300 1850
+$Comp
+L Device:R R1
+U 1 1 5C6F3931
+P 2850 2100
+F 0 "R1" V 2643 2100 50  0000 C CNN
+F 1 "2K2*" V 2734 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2780 2100 50  0001 C CNN
+F 3 "~" H 2850 2100 50  0001 C CNN
+	1    2850 2100
+	0    1    1    0   
+$EndComp
+Text Notes 1850 3250 0    50   ~ 0
+JP1:\n- 1-2 Laser\n- 2-3 Fan
 $EndSCHEMATC
