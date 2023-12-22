@@ -22,3 +22,5 @@ Through the use of JP1 jumper you can switch from Laser to Fan, so you don't nee
 If your FAN runs at 24V R1 must be 2.2KOhm, if it runs at 12V R1 must be 1.1KOhm.
 
 Note that JST (white) connectors are rotated to respect Creality 3D Ender 3 PRO polarity, so if your printer has inverted polarity rotate the JST connectors accordingly.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F3SGS48)
